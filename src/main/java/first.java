@@ -17,6 +17,14 @@ public class first {
         else{
             System.out.println("Try to next time");
         }
+        System.out.println("Input your number");
+        int c = 0;
+        while (c < 10){
+            c++;
+            if ((c%2) !=0) continue;
+            System.out.println(c);
+
+        }
     }
 
 }
