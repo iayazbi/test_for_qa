@@ -17,7 +17,7 @@ public class first {
         else{
             System.out.println("Try to next time");
         }
-        System.out.println("test1");
+        System.out.println("output of even numbers");
         int c = 0;
         while (c < 10){
             c++;
@@ -45,6 +45,13 @@ public class first {
         for (int i : nums){ // для вывода массива что бы не перебирать массив
             System.out.println(i);
         }
+
+        System.out.println("Cars in my garage");
+        car bmw = new car(150, 200, "e36");
+
+        bmw.getName();
+        bmw.getPower();
+        bmw.getSpeed();
     }
 
 }
