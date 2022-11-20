@@ -17,13 +17,33 @@ public class first {
         else{
             System.out.println("Try to next time");
         }
-        System.out.println("Input your number");
+        System.out.println("test1");
         int c = 0;
         while (c < 10){
             c++;
             if ((c%2) !=0) continue;
             System.out.println(c);
 
+        }
+        System.out.println("Bubble sort");
+        int [] nums = { 2, 8, 4, 148, 97, 874, 44, 12};
+        int temp;
+        boolean sorted = false;
+
+        while (!sorted){ // делать пока это тру
+            sorted = true;
+            for (int i = 0; i < nums.length -1; i++) {
+                if (nums[i] > nums[i+1]){
+                    temp = nums[i]; // временно заменяю первый индекс что бы не пропал
+                    nums[i] = nums[i+1];
+                    nums[i+1] = temp;
+                    sorted = false; // что бы ещё раз прогнать цикл
+                }
+            }
+
+        }
+        for (int i : nums){ // для вывода массива что бы не перебирать массив
+            System.out.println(i);
         }
     }
 
